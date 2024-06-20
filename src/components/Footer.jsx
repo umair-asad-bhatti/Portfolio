@@ -6,10 +6,10 @@ export default function Footer() {
             <footer className="footer p-10 text-neutral-content">
                 <nav>
                     <h6 className="footer-title">Services</h6>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <a className="link link-hover">Mobile App development</a>
+                    <a className="link link-hover">Web app development</a>
+                    <a className="link link-hover">API development</a>
+                    <a className="link link-hover">Backend development</a>
                 </nav>
                 <nav>
                     <h6 className="footer-title">Company</h6>

@@ -22,7 +22,7 @@ export function useGetData(collectionName, id = null) {
                     const res = data.data()
                     temp.push({ id: data.id, ...res })
                 })
-                setResource(temp)
+                setResource({ data: temp })
             }
             setLoading(false)
         })()

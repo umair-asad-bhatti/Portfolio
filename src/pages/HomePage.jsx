@@ -28,9 +28,8 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div >
-                <div className=" dark:bg-transparent bg-neutral-50">
-
-                    <div className="flex items-center justify-center">
+                <div className=" dark:bg-transparent bg-neutral-50 p-1">
+                    <div className="flex items-center justify-center mb-4">
                         <h1 className="text-center md:text-4xl font-bold underline">Tech Stack</h1>
                     </div>
                     <div className="flex items-center justify-center">
