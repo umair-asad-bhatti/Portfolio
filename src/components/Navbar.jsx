@@ -5,7 +5,7 @@ export default function Navbar() {
 
     const [navImage] = useGetData('Images', 'navimage')
     return (
-        <div className="navbar bg-base-100  ">
+        <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,10 +43,8 @@ export default function Navbar() {
                         </div>
                     </div>
                     <ul tabIndex={0} className="menu border dark:border-slate-800 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Profile</a></li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
-
+                        <li><a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank'>LinkedIn</a></li>
+                        <li><a href='https://github.com/umair-asad-bhatti' target='_blank'>Github</a></li>
                     </ul>
                 </div>
                 <div className="mx-4">

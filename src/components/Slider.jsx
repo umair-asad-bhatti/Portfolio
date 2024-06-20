@@ -6,6 +6,7 @@ import Node from '../assets/images/node.png'
 import Supabase from '../assets/images/supabase.png'
 import Python from '../assets/images/python.png'
 import Mongodb from '../assets/images/mongodb.png'
+import Database from '../assets/images/database.png'
 export default function Slider() {
     return (
         <div className="carousel rounded-box">
@@ -32,6 +33,9 @@ export default function Slider() {
             </div>
             <div className="carousel-item ">
                 <img src={Mongodb} alt="" />
+            </div>
+            <div className="carousel-item ">
+                <img src={Database} alt="" />
             </div>
         </div>
     )
