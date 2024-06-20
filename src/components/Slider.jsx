@@ -33,6 +33,9 @@ export default function Slider() {
             <div className="carousel-item ">
                 <img src={Mongodb} alt="" />
             </div>
+            <div className="carousel-item ">
+                <img src={Node} alt="" />
+            </div>
         </div>
     )
 }
