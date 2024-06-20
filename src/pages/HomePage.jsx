@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
         <div className="relative  h-full w-full    bg-background ">
             <>
-                <div className="hero min-h-screen bg-neutral-50 dark:bg-transparent">
+                <div className="hero  h-[550px]  bg-neutral-50 dark:bg-transparent">
                     <div className="flex justify-around md:flex-row md:gap-0 gap-4 flex-col items-center w-full">
                         <div className="hero-content text-center ">
                             <div className="max-w-md">
