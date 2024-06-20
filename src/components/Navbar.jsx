@@ -21,7 +21,7 @@ export default function Navbar() {
                         <li><a>About Me</a></li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">Umair Asad</a>
+                <a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank' className="btn btn-ghost text-xl">Umair Asad</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
