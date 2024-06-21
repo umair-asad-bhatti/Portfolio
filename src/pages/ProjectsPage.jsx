@@ -17,7 +17,7 @@ export default function ProjectsPage() {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 grid-cols-1 ld:gap-0  gap-4  place-items-center ">
                 {
                     projects?.data?.map(project => {
-                        return <div key={project.id} className="mt-4"> <Card title={project.title} desctiption={project.description} technologies={project.technologies} buttonText={'View Project'} imageLink={project.coverImage} projectLink={project.link} /></div>
+                        return <div key={project.id} className="mt-4"> <Card id={project.id} title={project.title} desctiption={project.description} technologies={project.technologies} buttonText={'View Project'} imageLink={project.coverImage} projectLink={project.link} /></div>
                     })
                 }
             </div>
