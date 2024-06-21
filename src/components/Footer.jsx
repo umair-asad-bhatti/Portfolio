@@ -2,6 +2,8 @@ import phoneLight from '../assets/icons/phoneLight.png'
 import phoneDark from '../assets/icons/phoneDark.png'
 import emailLight from '../assets/icons/emailLight.png'
 import emailDark from '../assets/icons/emailDark.png'
+import linkedinDark from '../assets/icons/linkedinDark.png'
+import linkedinLight from '../assets/icons/linkedinLight.png'
 export default function Footer() {
     return (
         <div>
@@ -32,7 +34,13 @@ export default function Footer() {
                         <img src={emailLight} className='w-5 h-5 dark:hidden block' />
                         aumairasad@gmail.com
                     </a>
-                    <a className="link link-hover">Cookie policy</a>
+
+                    <a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank' className="link link-hover flex justify-center items-center gap-1">
+                        <img src={linkedinDark} className='w-5 h-5 dark:block hidden' />
+                        <img src={linkedinLight} className='w-5 h-5 dark:hidden block' />
+                        Linked In
+                    </a>
+
                 </nav>
             </footer>
         </div>

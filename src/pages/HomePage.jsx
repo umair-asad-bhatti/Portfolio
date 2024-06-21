@@ -10,7 +10,7 @@ export default function HomePage() {
     return (
         <div className="relative  h-full w-full    bg-background ">
             <>
-                <div className="hero  h-[550px]  bg-neutral-50 dark:bg-transparent">
+                <div className="hero  md:h-[550px] h-auto  bg-neutral-50 dark:bg-transparent">
                     <div className="flex justify-around md:flex-row md:gap-0 gap-4 flex-col items-center w-full">
                         <div className="hero-content text-center ">
                             <div className={`max-w-md `}>
@@ -28,9 +28,9 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div >
-                <div className=" dark:bg-transparent bg-neutral-50 p-1">
+                <div className=" dark:bg-transparent bg-neutral-50 p-1 my-2">
                     <div className="flex items-center justify-center mb-4">
-                        <h1 className="text-center md:text-4xl font-bold underline">Tech Stack</h1>
+                        <h1 className="text-center md:text-4xl text-2xl font-bold underline">Tech Stack</h1>
                     </div>
                     <div className="flex items-center justify-center">
                         <div className="my-4 p-4 md:w-[80%] w-full">

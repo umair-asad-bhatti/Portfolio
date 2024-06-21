@@ -18,7 +18,7 @@ export default function Navbar() {
                         <Link to={'/projects'}>
                             <li><a >Projects</a></li>
                         </Link>
-                        <li><a>About Me</a></li>
+                        <li><a>services</a></li>
                     </ul>
                 </div>
                 <a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank' className="btn btn-ghost text-xl">Umair Asad</a>
@@ -31,7 +31,7 @@ export default function Navbar() {
                     <Link to={'/projects'}>
                         <li><a >Projects</a></li>
                     </Link>
-                    <li><a>About Me</a></li>
+                    <li><a>services</a></li>
                 </ul>
             </div>
             <div className="navbar-end">
