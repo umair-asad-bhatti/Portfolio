@@ -4,6 +4,10 @@ import emailLight from '../assets/icons/emailLight.png'
 import emailDark from '../assets/icons/emailDark.png'
 import linkedinDark from '../assets/icons/linkedinDark.png'
 import linkedinLight from '../assets/icons/linkedinLight.png'
+import githubDark from '../assets/icons/githubDark.png'
+import githubLight from '../assets/icons/githubLight.png'
+import { LINKS } from '../constants/Links'
+import CustomLink from './CustomLink'
 export default function Footer() {
     return (
         <div>
@@ -24,23 +28,12 @@ export default function Footer() {
                 </nav>
                 <nav>
                     <h6 className="footer-title">Contact</h6>
-                    <a className="link link-hover flex justify-center items-center gap-1">
-                        <img src={phoneDark} className='w-5 h-5 dark:block hidden' />
-                        <img src={phoneLight} className='w-5 h-5 dark:hidden block' />
-                        03154258376
-                    </a>
-                    <a className="link link-hover flex justify-center items-center gap-1">
-                        <img src={emailDark} className='w-5 h-5 dark:block hidden' />
-                        <img src={emailLight} className='w-5 h-5 dark:hidden block' />
-                        aumairasad@gmail.com
-                    </a>
-
-                    <a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank' className="link link-hover flex justify-center items-center gap-1">
-                        <img src={linkedinDark} className='w-5 h-5 dark:block hidden' />
-                        <img src={linkedinLight} className='w-5 h-5 dark:hidden block' />
-                        Linked In
-                    </a>
-
+                    <ul className='flex flex-col gap-2'>
+                        <CustomLink link={'/'} title='03154258376' lightImg={phoneLight} darkImg={phoneDark} />
+                        <CustomLink link={'/'} title='aumairasad@gmail.com' lightImg={emailLight} darkImg={emailDark} />
+                        <CustomLink link={LINKS.linkedIn} title='LinkedIn' lightImg={linkedinLight} darkImg={linkedinDark} />
+                        <CustomLink link={LINKS.github} title='Github' lightImg={githubLight} darkImg={githubDark} />
+                    </ul>
                 </nav>
             </footer>
         </div>

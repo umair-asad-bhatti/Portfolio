@@ -1,6 +1,12 @@
 import { useGetData } from "../hooks/useGetData";
 import ThemeController from "./ThemeController";
 import { Link } from "react-router-dom";
+import githubDark from '../assets/icons/githubDark.png'
+import githubLight from '../assets/icons/githubLight.png'
+import linkedinDark from '../assets/icons/linkedinDark.png'
+import linkedinLight from '../assets/icons/linkedinLight.png'
+import CustomLink from './CustomLink'
+import { LINKS } from '../constants/Links'
 export default function Navbar() {
 
     const [navImage] = useGetData('Images', 'navimage')
@@ -21,7 +27,7 @@ export default function Navbar() {
                         <li><a>services</a></li>
                     </ul>
                 </div>
-                <a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank' className="btn btn-ghost text-xl">Umair Asad</a>
+                <a href={LINKS.linkedIn} target='_blank' className="btn btn-ghost text-xl">Umair Asad</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -43,8 +49,8 @@ export default function Navbar() {
                         </div>
                     </div>
                     <ul tabIndex={0} className="menu border dark:border-slate-800 menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a href='https://www.linkedin.com/in/umair-asad-84445a1b9/' target='_blank'>LinkedIn</a></li>
-                        <li><a href='https://github.com/umair-asad-bhatti' target='_blank'>Github</a></li>
+                        <CustomLink link={LINKS.linkedIn} title='LinkedIn' lightImg={linkedinLight} darkImg={linkedinDark} />
+                        <CustomLink link={LINKS.github} title='Github' lightImg={githubLight} darkImg={githubDark} />
                     </ul>
                 </div>
                 <div className="mx-4">
