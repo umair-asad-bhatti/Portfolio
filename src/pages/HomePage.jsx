@@ -28,7 +28,7 @@ export default function HomePage() {
                         </div>
                     </div>
                 </div >
-                <div className=" dark:bg-transparent bg-neutral-50 p-1 my-2">
+                <div className=" dark:bg-transparent bg-neutral-50 p-1 py-4">
                     <div className="flex items-center justify-center mb-4">
                         <h1 className="text-center md:text-4xl text-2xl font-bold underline">Tech Stack</h1>
                     </div>
