@@ -1,8 +1,5 @@
-/* eslint-disable no-unused-vars */
+
 /* eslint-disable react/prop-types */
-
-import CustomLink from "./CustomLink";
-
 
 export default function Card({ id, imageLink, title, desctiption, buttonText, technologies, projectLink }) {
     return (
